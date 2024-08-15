@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html
-class="dark"
   lang="en"
   th:fragment="parent(content,title)"
   xmlns:th="http://www.thymeleaf.org"
@@ -13,17 +12,20 @@ class="dark"
       href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
       rel="stylesheet"
     />
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sh a512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" data-th-href="@{/CSS/output.css}" />
   </head>
   <body>
     <div data-th-replace="~{header :: navbar}"></div>
-    <div class="p-4">
-      <section data-th-replace="${content}"></section>
-    </div>
-
-    <div class="p-4">
-      <footer>this is a footer</footer>
-    </div>
+    <!-- <div data-th-replace="~{header :: navbar}"></div> -->
+    <div data-th-replace="${content}"></div>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.js"></script>
+    <script data-th-src="@{/JS/script.js}"></script>
 </html>

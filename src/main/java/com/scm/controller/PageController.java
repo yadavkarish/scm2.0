@@ -1,4 +1,4 @@
-package com.scm.controller;
+package com.scm.Controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
