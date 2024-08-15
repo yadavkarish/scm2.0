@@ -5,5 +5,6 @@ ntent: ["./src/main/resources/**/*.{html,js}"],
     extend: {},
   },
   plugins: [],
+  darkMode: "selector",
 }
 
